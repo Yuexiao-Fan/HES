@@ -1,0 +1,129 @@
+h1,
+h2,
+h3,
+nav,
+footer {
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+#spinButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+svg {
+  transform: rotate(-90deg);
+}
+text {
+  font-size: 14px;
+  fill: white;
+  text-anchor: middle;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  font-weight: bold;
+}
+
+.background-image-blur-whitewash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/background.jpg); /* add the background.jpg as the background */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) contrast(0.1) brightness(1.8);
+  z-index: -1;
+}
+
+/* 顶部区域，包含Logo */
+.top {
+  position: relative;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* logo 左上角 */
+.top .logo {
+  width: 150px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  color: #333;
+}
+
+@media (min-width: 1025px) {
+  .top-nav {
+    z-index: 110;
+  }
+}
+.top-nav {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #962b27;
+  color: #e0d1c3;
+}
+.top-nav span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* 中部区域 */
+.middle {
+  padding: 0 20px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+#wheel-container {
+  margin: 0 auto;
+}
+
+#spinButton {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #962b27, #feb47b);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#spinButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+#spinButton:active {
+  transform: translateY(0);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
