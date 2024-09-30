@@ -10,8 +10,8 @@ app.use(express.json()); // 解析POST请求的body
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "12345678", // 替换为你的密码
-  database: "HES",
+  password: "12345678", // 替换为你的数据库密码
+  database: "HES", // 替换为你的数据库名
 });
 
 db.connect((err) => {
